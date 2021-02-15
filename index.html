@@ -32,13 +32,13 @@
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="navbar-nav ml-auto">
               <li class="nav-item">
-                  <a class="nav-link" href="">Contact</a>
+                  <a class="nav-link" href="#footer">Contact</a>
               </li>
               <li class="nav-item">
-                  <a class="nav-link" href="">Pricing</a>
+                  <a class="nav-link" href="#pricing">Pricing</a>
               </li>
               <li class="nav-item">
-                  <a class="nav-link" href="">Download</a>
+                  <a class="nav-link" href="#cta">Download</a>
               </li>
           </ul>
         </div>
@@ -46,7 +46,7 @@
 
 
       <!-- Title -->
-      <div class="row">
+      <div class="row head">
         <div class="col-lg-6">
           <h1 class="h1-title">Meet new and interesting dogs nearby.</h1>
           <button class="btn btn-dark btn-lg download-button" type="button"><i class="fab fa-apple"></i> Download</button>
@@ -64,7 +64,7 @@
 
   <section id="features">
 
-    <div class="row ">
+    <div class="row feature-div">
 
       <div class="col-lg-4 feature-box">
         <i class="fas fa-check-circle icon-feature fa-4x"></i>
@@ -94,13 +94,28 @@
 
   <section id="testimonials">
 
-    <h2>I no longer have to sniff other dogs for love. I've found the hottest Corgi on TinDog. Woof.</h2>
-    <img class="testimonial-image" src="images/dog-img.jpg" alt="dog-profile">
-    <em>Pebbles, New York</em>
-
-    <!-- <h2 class="testimonial-text">My dog used to be so lonely, but with TinDog's help, they've found the love of their life. I think.</h2>
-    <img class="testimonial-image" src="images/lady-img.jpg" alt="lady-profile">
-    <em>Beverly, Illinois</em> -->
+    <div id="testimonial-carousel" class="carousel slide" data-ride="false">
+      <div class="carousel-inner">
+          <div class="carousel-item active" >
+            <h2>I no longer have to sniff other dogs for love. I've found the hottest Corgi on TinDog. Woof.</h2>
+            <img class="testimonial-image" src="images/dog-img.jpg" alt="dog-profile">
+            <em>Pebbles, New York</em>
+          </div>
+          <div class="carousel-item" >
+            <h2 class="testimonial-text">My dog used to be so lonely, but with TinDog's help, they've found the love of their life. I think.</h2>
+            <img class="testimonial-image" src="images/lady-img.jpg" alt="lady-profile">
+            <em>Beverly, Illinois</em>>
+          </div>
+      </div>
+      <a class="carousel-control-prev" href="#testimonial-carousel" role="button" data-slide="prev">
+          <span class="carousel-control-prev-icon"></span>
+          
+      </a>
+      <a class="carousel-control-next" href="#testimonial-carousel" role="button" data-slide="next">
+          <span class="carousel-control-next-icon"></span>
+         
+      </a>
+  </div>
 
   </section>
 
@@ -123,30 +138,52 @@
     <h2>A Plan for Every Dog's Needs</h2>
     <p>Simple and affordable price plans for your and your dog.</p>
 
+    <div class="row">
 
-    <h3>Chihuahua</h3>
-    <h2>Free</h2>
-    <p>5 Matches Per Day</p>
-    <p>10 Messages Per Day</p>
-    <p>Unlimited App Usage</p>
-    <button type="button">Sign Up</button>
-
-
-    <h3>Labrador</h3>
-    <h2>$49 / mo</h2>
-    <p>Unlimited Matches</p>
-    <p>Unlimited Messages</p>
-    <p>Unlimited App Usage</p>
-    <button type="button">Sign Up</button>
-
-
-    <h3>Mastiff</h3>
-    <h2>$99 / mo</h2>
-    <p>Pirority Listing</p>
-    <p>Unlimited Matches</p>
-    <p>Unlimited Messages</p>
-    <p>Unlimited App Usage</p>
-    <button type="button">Sign Up</button>
+      <div class="pricing-column col-lg-4 col-md-6">
+        <div class="card">
+          <div class="card-header">
+            <h3>Chihuahua</h3>
+          </div>
+          <div class="card-body">
+            <h2>Free</h2>
+            <p>5 Matches Per Day</p>
+            <p>10 Messages Per Day</p>
+            <p>Unlimited App Usage</p>
+            <button type="button" class="btn btn-lg btn-block btn-outline-dark">Sign Up</button>
+          </div>
+        </div>
+      </div>
+      <div class="pricing-column col-lg-4 col-md-6">
+        <div class="card">
+          <div class="card-header">
+            <h3>Labrador</h3>
+          </div>
+          <div class="card-body">
+            <h2>$49 / mo</h2>
+            <p>Unlimited Matches</p>
+            <p>Unlimited Messages</p>
+            <p>Unlimited App Usage</p>
+            <button class="btn btn-lg btn-block btn-dark" type="button">Sign Up</button>
+          </div>
+        </div>
+      </div>
+      <div class="pricing-column col-lg-4">
+        <div class="card">
+          <div class="card-header">
+            <h3>Mastiff</h3>
+          </div>
+          <div class="card-body">
+            <h2>$99 / mo</h2>
+            <p>Pirority Listing</p>
+            <p>Unlimited Matches</p>
+            <p>Unlimited Messages</p>
+            <p>Unlimited App Usage</p>
+            <button class="btn btn-lg btn-block btn-dark" type="button">Sign Up</button>
+          </div>
+        </div>
+      </div>
+    </div>
 
   </section>
 
@@ -154,18 +191,21 @@
   <!-- Call to Action -->
 
   <section id="cta">
-
-    <h3>Find the True Love of Your Dog's Life Today.</h3>
-    <button type="button">Download</button>
-    <button type="button">Download</button>
-
+    
+      <h3 class="cta-text">Find the True Love of Your Dog's Life Today.</h3>
+      <button class="btn btn-dark btn-lg download-button" type="button"><i class="fab fa-apple"></i> Download</button>
+      <button class="btn btn-light btn-lg download-button" type="button"><i class="fab fa-google-play"></i> Download</button>
+    
   </section>
 
 
   <!-- Footer -->
 
   <footer id="footer">
-
+    <i class="social-icon fab fa-facebook-f"></i>
+    <i class="social-icon fab fa-twitter"></i>
+    <i class="social-icon fab fa-instagram"></i>
+    <i class="social-icon fas fa-envelope"></i>
     <p>© Copyright 2018 TinDog</p>
 
   </footer>
